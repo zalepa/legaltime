@@ -23,8 +23,16 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <div class="font-mono flex flex-col border-2 border-black m-4" style="height: calc(100vh - 2rem); ">
+      <header class="border-b-2 border-black p-2">
+      <h1>legaltime</h1>
+      </header>
+      <main class="flex-grow p-2 overflow-y-auto">
       <%= yield %>
-    </main>
+      </main>
+      <footer class="border-t-2 border-black p-2 mt-auto">
+      <p class="text-xs">&copy; <%= Time.current.year %> Art Redacted LLC</p>
+      </footer>
+    </div>
   </body>
 </html>

@@ -64,4 +64,5 @@ group :test do
   gem "selenium-webdriver"
 end
 
+# Use hotwire-spark for hot reloading of HTML over WebSocket
 gem "hotwire-spark", "~> 0.1.13", group: :development

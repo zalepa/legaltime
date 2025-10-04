@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@layer base {
+  /* I. Headings */
+
+  h1 {
+    @apply text-2xl md:text-2xl font-bold mb-6;
+  }
+
+  h3 {
+    @apply text-xl font-semibold mb-2;
+  }
+
+  hr {
+    @apply my-8 border-gray-300;
+  }
+
+  /* II. Utility Styles */
+  .button {
+    @apply inline-block text-black border-dashed border-1 px-3 py-2 rounded-sm font-semibold hover:bg-slate-100  transition
+  }
+
+}
